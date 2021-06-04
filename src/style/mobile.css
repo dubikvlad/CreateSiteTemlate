@@ -2,4 +2,13 @@
     .pc {
         display: none;
     }
+
+    .header-logo {
+        width: 100px;
+        background-size: 100px;
+    }
+
+    .welcome {
+        padding: 0 15px;
+    }
 }

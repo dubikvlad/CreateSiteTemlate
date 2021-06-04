@@ -5,7 +5,7 @@ body {
 
 .welcome {
     height: 100vh;
-    background: #fff url(/src/img/bgsh.png) center no-repeat;
+    background: #fff url(../img/bgsh.png) center no-repeat;
     padding: 0 30px;
 }
 
@@ -19,7 +19,7 @@ body {
 .header-logo {
     height: 100%;
     width: 180px;
-    background: url(/src/img/logob.svg) center center no-repeat;
+    background: url(../img/logob.svg) center center no-repeat;
 }
 
 .header-menu {
