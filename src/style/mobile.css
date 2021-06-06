@@ -55,6 +55,51 @@
     .what-item_name {
         min-height: 1em;
     }
+
+    .services-content {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .services-cards {
+        display: block;
+    }
+
+    .services-info {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 90px;
+    }
+
+    .services-info_img {
+        width: 100%;
+    }
+    
+    .services-info-text {
+        height: auto;
+        width: 80%;
+        max-width: 280px;
+        margin-left: -1px;
+        margin-top: -150px;
+    }
+
+    .services-info-text__heading {
+        min-height: auto;
+    }
+    .services-content__text {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
 }
 
 
