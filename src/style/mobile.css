@@ -51,6 +51,10 @@
         height: auto;
         min-height: 250px;
     }
+
+    .what-item_name {
+        min-height: 1em;
+    }
 }
 
 

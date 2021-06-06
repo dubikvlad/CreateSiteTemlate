@@ -151,6 +151,21 @@ h2 {
 .what-item_name {
     padding-bottom: 20px;
     margin-bottom: 20px;
+    position: relative;
+    min-height: 2em;
+}
+
+.what-item_name:after {
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background: #febf01;
+    position: absolute;
+    left: 0;
+    content: '';
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
 
 .what-item_text {
