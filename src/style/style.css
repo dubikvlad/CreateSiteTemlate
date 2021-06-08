@@ -196,7 +196,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    max-width: 1300px;
+    max-width: 100%;
     margin-top: 27px;
     display: flex;
     justify-content: space-around;
@@ -259,6 +259,124 @@ h2 {
     position: absolute;
     bottom: -27px;
     left: -1px;
+}
+
+.industries {
+    background: url(../img/black_bg2.jpg) center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.industries-content__head {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.industries-cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.industries-card {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin-right: 10px;
+    width: calc(100% / 16 * 4 - 60px - .1px);
+}
+
+.industries-card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.05);
+    content: '';
+}
+
+.card__img {
+    height: 80px;
+}
+
+.industries-card-img {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.industries-card-img:after {
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #febf01;
+    position: absolute;
+    left: 0;
+    content: '';
+}
+
+.industries-card-info {
+    font-size: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.glad {
+    background: url(../img/white_bg.jpg) center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0;
+    color: #000;
+}
+
+.glad-content {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.footer {
+    background: url(../img/bg_black.jpg) center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    width: 100%;
+    display: table-cell; 
+    vertical-align: middle;
+    padding-right: 45%;
+    height: 400px;
+}
+
+.footer_text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer_text-big {
+    font-size: 28px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+main {
+    position: relative;
+    margin-bottom: 400px;
 }
 
 .mobile {
