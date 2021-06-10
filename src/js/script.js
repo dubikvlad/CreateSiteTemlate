@@ -3,7 +3,7 @@ var openBtn = document.getElementById('openMenuBtn');
 var item = document.querySelectorAll('.menu-i');
 
 openBtn.onclick = openNav;
-//closeBtn.onclick = closeNav;
+closeBtn.onclick = closeNav;
 
 var i, tabcontent;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -54,8 +54,7 @@ function openPage(pageName) {
     }
     else{
         openPage('defaultOpen');
-    }
-    
+    } 
 
     closeNav();     
 }
