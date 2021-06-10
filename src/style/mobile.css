@@ -36,10 +36,6 @@
         padding: 0 15px;
     }
 
-    .welcome-text {
-        margin-top: 10vh;
-    }
-
     .what {
         padding-top: 60px;
     }
@@ -117,6 +113,10 @@
 
     .pc {
         display: none;
+    }  
+
+    .mobile {
+        display: block;
     }
 
     .glad-content {
@@ -142,7 +142,33 @@
 
 
 @media screen and (max-width: 1100px) {
-    .header-menu {
+    .pc {
         display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .header-menu_nav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-menu_nav li a {
+        display: block;
+        color: #fff;
+        padding-bottom: 20px;
+        text-align: center;
     }
 }

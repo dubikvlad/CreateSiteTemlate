@@ -98,12 +98,26 @@ h2 {
     margin-top: 5px;
 }
 
+.hidden {
+    display: none;
+}
+
 .welcome-text {
     line-height: 2;
     text-transform: uppercase;
-    height: calc(100vh - 90px);
-    display: table-cell; 
-    vertical-align: middle;
+    min-height: calc(100vh - 90px);
+    position: relative;
+    margin: auto;
+}
+
+.welcome-text_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tabcontent {
+    padding: 30px 0;
 }
 
 .what {
@@ -383,6 +397,7 @@ h2 {
     margin-bottom: 12px;
     margin-top: 5px;
 }
+
 
 main {
     position: relative;
