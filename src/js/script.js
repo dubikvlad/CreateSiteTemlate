@@ -22,19 +22,19 @@ for (var i = 0; i < item.length; i++) {
     // }
 
     if(item[i].classList.contains('insta')){
-            item[i].addEventListener('click', () => {
-            openPage('insta');
-            })        
-    } 
-    if(item[i].classList.contains('prices')){
         item[i].addEventListener('click', () => {
-        openPage('prices');
+            openPage('insta');
         })        
-} 
+    } 
+    else if(item[i].classList.contains('prices')){
+        item[i].addEventListener('click', () => {
+            openPage('prices');
+        })        
+    } 
     else {
         item[i].addEventListener('click', () => {
             openPage('defaultOpen');
-            })
+        })
     }       
 }
 
