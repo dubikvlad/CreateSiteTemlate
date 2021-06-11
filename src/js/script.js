@@ -28,7 +28,12 @@ for (var i = 0; i < item.length; i++) {
         item[i].addEventListener('click', () => {
             openPage('service');
         })        
-    } 
+    }
+    else if(item[i].classList.contains('we')){
+        item[i].addEventListener('click', () => {
+            openPage('we');
+        })        
+    }  
     else {
         item[i].addEventListener('click', () => {
             openPage('main');
