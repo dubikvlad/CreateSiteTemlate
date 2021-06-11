@@ -149,6 +149,10 @@ h2 {
     transform: translateY(-50%);
 }
 
+.welcome-text_content h2 {
+    margin-bottom: 10px;
+}
+
 .menu-i {
     cursor: pointer;
 }
