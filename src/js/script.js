@@ -2,7 +2,7 @@ var closeBtn = document.getElementById('nav')
 var openBtn = document.getElementById('openMenuBtn');
 var item = document.querySelectorAll('.menu-i');
 
-openBtn.onclick = openNav;
+openBtn.addEventListener('click', openNav);
 closeBtn.onclick = closeNav;
 
 var i, tabcontent;
@@ -12,14 +12,7 @@ var i, tabcontent;
 }
 
 for (var i = 0; i < item.length; i++) {
-    openPage('defaultOpen');
-    // if(item[i].addEventListener('click')){
-    //     if(item[i].classList.contains('insta')){
-    //             item[i].addEventListener('click', () => {
-    //             openPage('insta');
-    //             })        
-    //         } 
-    // }
+    openPage('main');
 
     if(item[i].classList.contains('insta')){
         item[i].addEventListener('click', () => {
@@ -33,12 +26,10 @@ for (var i = 0; i < item.length; i++) {
     } 
     else {
         item[i].addEventListener('click', () => {
-            openPage('defaultOpen');
+            openPage('main');
         })
     }       
 }
-
-
 
 
 function openPage(pageName) {
@@ -53,7 +44,7 @@ function openPage(pageName) {
         current.style.display = "block";
     }
     else{
-        openPage('defaultOpen');
+        openPage('main');
     } 
 
     closeNav();     
