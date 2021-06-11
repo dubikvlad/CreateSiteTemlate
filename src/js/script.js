@@ -24,6 +24,11 @@ for (var i = 0; i < item.length; i++) {
             openPage('prices');
         })        
     } 
+    else if(item[i].classList.contains('service')){
+        item[i].addEventListener('click', () => {
+            openPage('service');
+        })        
+    } 
     else {
         item[i].addEventListener('click', () => {
             openPage('main');
