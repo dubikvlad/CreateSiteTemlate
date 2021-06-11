@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter',Helvetica,sans-serif;
+    font-family: 'Montserrat','Inter',Helvetica,sans-serif;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@ h3 {
 
 h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .container_padding {
@@ -265,7 +265,7 @@ h2 {
 }
 
 .services-info {
-    height: 680px;
+    height: 700px;
     max-width: 392px;
 }
 
@@ -465,6 +465,10 @@ h2 {
 .welcome-prices {
     display: flex;
     flex-wrap: wrap;
+}
+
+.welcome-prices__heading {
+    min-height: 80px;
 }
 
 .welcome-prices__list {

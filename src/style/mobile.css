@@ -189,6 +189,10 @@
     .welcome-tabcontent__block {
         width: 100%;
     }
+
+    .welcome-prices__heading {
+        min-height: auto;
+    }
 }
 
 
