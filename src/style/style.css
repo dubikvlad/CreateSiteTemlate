@@ -445,6 +445,7 @@ h2 {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.03);
     margin: 0px 10px 20px 10px;
+    position: relative;
 }
 
 .welcome-insta__heading {
@@ -461,6 +462,24 @@ h2 {
     flex-wrap: wrap;
 }
 
+.welcome-prices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome-prices__list {
+    text-transform: none;
+}
+
+.welcome-prices__profit {
+    width: 190px;
+    background: #febf01;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
 
 main {
     position: relative;
