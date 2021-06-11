@@ -47,6 +47,10 @@ p, h1, h2, h3, li {
     cursor: default;
 }
 
+a {
+    outline: none !important;
+}
+
 blockquote, q {
 	quotes: none;
 }
