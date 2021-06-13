@@ -193,6 +193,20 @@
     .welcome-prices__heading {
         min-height: auto;
     }
+
+    .welcome-we__heading {
+        display: contents;
+    }
+
+    .welcome-we__img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        background:rgba(254, 191, 1, 1);
+        border-radius: 50%;
+        padding: 3px;
+        float: left;
+    }
 }
 
 

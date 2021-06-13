@@ -496,6 +496,16 @@ h2 {
 
 .welcome-we__heading {
     min-height: 80px;
+    display: flex;
+}
+
+.welcome-we__img {
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+    background:rgba(254, 191, 1, 1);
+    border-radius: 50%;
+    padding: 3px;
 }
 
 .welcome-we__content {
