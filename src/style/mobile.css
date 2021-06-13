@@ -207,6 +207,16 @@
         padding: 3px;
         float: left;
     }
+
+    .welcome-text_content h2 {
+        padding: 0 7px;
+    }
 }
 
-
+@media screen and (max-width: 350px) {
+    .welcome-text_content {
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+}

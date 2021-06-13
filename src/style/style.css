@@ -138,7 +138,7 @@ h2 {
 .welcome-text {
     line-height: 2;
     text-transform: uppercase;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 110px);
     position: relative;
     margin: auto;
 }
@@ -149,8 +149,28 @@ h2 {
     transform: translateY(-50%);
 }
 
+.welcome-text__1 {
+    display: block;
+    border: 2px solid rgba(254, 191, 1, 1);
+    
+}
+
+.welcome-text__2 {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 1);
+    background-color: rgba(254, 191, 1, 1);
+}
+
+.welcome-text__3 {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .welcome-text_content h2 {
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
 }
 
 .menu-i {
