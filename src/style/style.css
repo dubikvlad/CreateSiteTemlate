@@ -489,6 +489,19 @@ h2 {
     bottom: 20px;
 }
 
+.welcome-we {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome-we__heading {
+    min-height: 80px;
+}
+
+.welcome-we__content {
+    text-transform: none;
+}
+
 main {
     position: relative;
     margin-bottom: 400px;
