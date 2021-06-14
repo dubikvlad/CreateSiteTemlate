@@ -48,13 +48,19 @@ h2 {
 .header-logo {
     height: 100%;
     width: 180px;
-    background: url(../img/logob.svg) center center no-repeat;
 }
 
 .header-logo__link {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.header-logo__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .header-menu {
