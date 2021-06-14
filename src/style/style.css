@@ -29,7 +29,7 @@ h2 {
 }
 
 .justify-text {
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .header {
@@ -335,6 +335,7 @@ h2 {
     margin-top: 13px;
     padding-bottom: 41px;
 }
+
 
 .services-info-profit {
     background: #febf01;
