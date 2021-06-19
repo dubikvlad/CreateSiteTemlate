@@ -157,25 +157,24 @@ h2 {
 
 .welcome-text__1 {
     display: block;
-    border: 2px solid rgba(254, 191, 1, 1);
-    
+    box-shadow: inset 0 -10px 25px -20px rgba(0, 0, 0, 1);
+    /* box-shadow: inset 0 -10px 25px -20px rgba(254, 191, 1, 1); */
 }
 
 .welcome-text__2 {
     display: block;
-    border: 2px solid rgba(0, 0, 0, 1);
-    background-color: rgba(254, 191, 1, 1);
+    box-shadow: inset 0 -10px 25px -20px rgba(0, 0, 0, 1);
 }
 
 .welcome-text__3 {
     display: block;
-    border: 2px solid rgba(0, 0, 0, 1);
-    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -10px 25px -20px rgba(0, 0, 0, 1);
+    /* box-shadow: inset 0 -10px 25px -20px rgba(254, 191, 1, 1); */
 }
 
 .welcome-text_content h2 {
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     padding-left: 15px;
 }
 
