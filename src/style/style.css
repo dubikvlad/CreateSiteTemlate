@@ -28,15 +28,12 @@ h2 {
     padding-bottom: 15px;
 }
 
-.justify-text {
-    /* text-align: justify; */
-}
+/* .justify-text {
+    text-align: justify;
+} */
 
 .header {
-    position: relative;
-    ;
-
-    
+    position: relative;   
 }
 
 .header_helper {
@@ -366,8 +363,7 @@ h2 {
     font-weight: 900;
 }
 
-.industries-cards {
-    
+.industries-cards {    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

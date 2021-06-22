@@ -83,3 +83,8 @@ for (let anchor of anchors) {
     })
   })
 }
+
+// bxslider
+$(document).ready(function(){
+    $('.bxslider').bxSlider();
+});
