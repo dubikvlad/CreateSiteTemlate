@@ -1,17 +1,16 @@
-var closeBtn = document.getElementById('nav')
-var openBtn = document.getElementById('openMenuBtn');
-var item = document.querySelectorAll('.menu-i');
+//menu..........................
+
+let closeBtn = document.getElementById('nav')
+let openBtn = document.getElementById('openMenuBtn');
+let item = document.querySelectorAll('.menu-i');
+let classes = ['insta','prices','service','we'];  //menu classes.....add class or remove in nav menu
 
 openBtn.addEventListener('click', openNav);
 closeBtn.onclick = closeNav;
+   
+let tabcontent = document.getElementsByClassName("tabcontent");
 
-var i, tabcontent;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-}
-
-for (var i = 0; i < item.length; i++) {
+for (let i = 0; i < item.length; i++) {
     openPage('main');
 
     if(item[i].classList.contains('insta')){
@@ -43,7 +42,7 @@ for (var i = 0; i < item.length; i++) {
 
 
 function openPage(pageName) {
-    var i, tabcontent, current;
+    let i, tabcontent, current;
 
     current = document.getElementById(pageName);
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -88,3 +87,4 @@ for (let anchor of anchors) {
 $(document).ready(function(){
     $('.bxslider').bxSlider();
 });
+
