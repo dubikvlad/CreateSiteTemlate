@@ -1,74 +1,74 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('form');
-    form.addEventListener('submit', formSend);
 
-    async function formSend(e) {
-        e.preventDefault();
+const form = document.getElementById('form');
+form.addEventListener('submit', formSend);
 
-        let error = formValidate(form);
+async function formSend(e) {
+    e.preventDefault();
 
-        if (error === 0) {
+    let error = formValidate(form);
 
-        } else {
-            alert('Корректно заполните обязательные поля')
-        }
+    if (error === 0) {
+        closePopUp();
+    } else {
+        alert('Корректно заполните обязательные поля');
     }
+}
 
-    function formValidate(form) {
-        let error = 0;
-        let formReq = document.querySelectorAll('._req');
+function formValidate(form) {
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
 
-        for(let i = 0; i < formReq.length; i++) {
-            const input = formReq[i];
+    for(let i = 0; i < formReq.length; i++) {
+        const input = formReq[i];
 
-            formRermoveError(input);
+        formRermoveError(input);
 
-            if(input.classList.contains('_email')) {
-                if(validateEmail(input)) {
-                    formAddError(input);
-                    error++;
-                }
-            }
-            else if(input.classList.contains('_phone')) {
-                if(validatePhone(input)) {
-                    formAddError(input);
-                    error++;                   
-                }
-            }
-            else if(input.getAttribute("type") === "checkbox" && input.checked === false) {
+        if(input.classList.contains('_email')) {
+            if(validateEmail(input)) {
                 formAddError(input);
                 error++;
-            } 
-            else {
-                if (input.value === '') {
-                    formAddError(input);
-                    error++;                    
-                }
-            }           
-        }        
-        return error;
-    }
+            }
+        }
+        else if(input.classList.contains('_phone')) {
+            if(validatePhone(input)) {
+                formAddError(input);
+                error++;                   
+            }
+        }
+        else if(input.getAttribute("type") === "checkbox" && input.checked === false) {
+            formAddError(input);
+            error++;
+        } 
+        else {
+            if (input.value === '') {
+                formAddError(input);
+                error++;                    
+            }
+        }           
+    }       
+    return error;
+}
 
-    function formAddError(input) {
-        input.parentElement.classList.add('_error');
-        input.classList.add('_error');
-    }
-    function formRermoveError(input) {
-        input.parentElement.classList.remove('_error');
-        input.classList.remove('_error');
-    }
+function formAddError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+}
+function formRermoveError(input) {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+}
 
-    //test e-mail
-    function validateEmail(input) {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return !re.test(String(input.value).toLowerCase());
-    }
-    //test Phone
-    function validatePhone(input) {
-        const re = /^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$/;
-        return !re.test(input.value);
-    }
-});
+//test e-mail
+function validateEmail(input) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return !re.test(input.value);
+}
+//test Phone
+function validatePhone(input) {
+    const re = /^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$/;
+    return !re.test(input.value);
+}
+
 
 
 //pop-up
