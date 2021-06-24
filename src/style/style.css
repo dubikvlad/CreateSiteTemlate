@@ -534,12 +534,6 @@ h2 {
     text-transform: none;
 }
 
-.red {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(149, 132, 214);
-}
-
 .pop-up {
     display: none;
     position: fixed;
@@ -548,12 +542,22 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: rgba(39, 39, 39, 0.7);
-    z-index: 1000;
+    text-align: center;
 }
 
-.form{
+.pop-up::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.form {
     margin: 0 auto;
     max-width: 550px;
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .form__body {
@@ -674,7 +678,8 @@ h2 {
     width: 32px;
     height: 32px;
     opacity: 0.3;
-    }
+}
+
 .close:hover {
     opacity: 1;
 }
