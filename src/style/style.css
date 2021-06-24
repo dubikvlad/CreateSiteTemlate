@@ -554,17 +554,16 @@ h2 {
 
 .form {
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 456px;
     vertical-align: middle;
     display: inline-block;
     vertical-align: middle;
+    text-align: left;
 }
 
 .form__body {
-    padding: 20px 0;
     background: rgb(235, 234, 234);
     padding: 30px;
-    box-sizing: border-box;
 }
 
 .form__item {

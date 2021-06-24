@@ -210,6 +210,11 @@
     .welcome-text_content h2 {
         padding: 0 7px;
     }
+
+    .form {
+        width: 100%;
+        margin-left: -5px;
+    }
 }
 
 @media screen and (max-width: 350px) {
