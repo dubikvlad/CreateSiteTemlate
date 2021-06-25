@@ -113,6 +113,7 @@ h2 {
     border-radius: 5px;
     text-transform: uppercase;
     color: #000;
+    z-index: 999;
 }
 
 .header__open-form-button {
