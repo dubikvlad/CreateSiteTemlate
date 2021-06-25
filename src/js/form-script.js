@@ -6,8 +6,22 @@ async function formSend(e) {
 
     let error = formValidate(form);
 
+    let formData = new FormData(form);
+
     if (error === 0) {
-        closePopUp();
+        form.classList.add('_sending');
+        // let response = await fetch( 'sendmail.php', {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        // if(response.ok){
+        //     let result = await response.json();
+        //     alert(result.message);
+        //     form.reset();
+        // }else {
+
+        // }
+        //closePopUp();
     } else {
         alert('Корректно заполните обязательные поля');
     }

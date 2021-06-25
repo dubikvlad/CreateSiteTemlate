@@ -113,7 +113,7 @@ h2 {
     border-radius: 5px;
     text-transform: uppercase;
     color: #000;
-    z-index: 999;
+    z-index: 2;
 }
 
 .header__open-form-button {
@@ -591,7 +591,26 @@ h2 {
 .form__body {
     background: rgb(235, 234, 234);
     padding: 30px;
+    position: relative;
 }
+
+.form__body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.651) url('../img/gif/loading.gif') center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .form__item {
     margin-bottom: 20px;
