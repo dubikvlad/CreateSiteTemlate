@@ -36,9 +36,9 @@
 
     //отправка
     if(!$mail->send()) {
-        $message = "Что-то почло не так"
+        $message = "Что-то почло не так";
     } else {
-        $message = "Данные отправлены!"
+        $message = "Данные отправлены!";
     }
 
     $response = ['message' => $message];
