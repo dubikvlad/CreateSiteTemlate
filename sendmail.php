@@ -11,6 +11,9 @@
     $mail->setLanguge('ru' , 'phpmailer/language/');
     $mail->IsHTML(true);
 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mail.ru';  						  // Specify main and backup SMTP servers
@@ -31,13 +34,13 @@
     $body = '<h1>Новая заявка</h1>';
 
     if(trim(!empty($_POST['name']))) {
-        $body.='<p><strong>Имя: </strong> '.$_POST['name']'.</p>';
+        $body.='<p><strong>Имя: </strong> ' $name '.</p>';
     }
     if(trim(!empty($_POST['email']))) {
-        $body.='<p><strong>E-mail: </strong> '.$_POST['email']'.</p>';
+        $body.='<p><strong>E-mail: </strong> ' $email '.</p>';
     }
     if(trim(!empty($_POST['phone']))) {
-        $body.='<p><strong>Телефон: </strong> '.$_POST['phone']'.</p>';
+        $body.='<p><strong>Телефон: </strong> ' $phone '.</p>';
     }
 
     $mail->Body = $body;
