@@ -20,6 +20,7 @@
         transition: 0.5s;
         flex-direction: column;
         justify-content: center;
+        z-index: 3;
     }
 
     .header-menu_nav li a {

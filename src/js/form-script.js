@@ -9,13 +9,11 @@ async function formSend(e) {
     let formData = new FormData(form);
 
     if (error === 0) {
-        console.log('lkjsjflgnlj');
         form.classList.add('_sending');
         let response = await fetch('sendmail.php', {
             method: 'POST',
             body: formData
         })
-        console.log("bla");
         if(response.ok){
             let result = await response.json();
             alert(result.message);
@@ -52,10 +50,10 @@ function formValidate(form) {
                 error++;                   
             }
         }
-        else if(input.getAttribute("type") === "checkbox" && input.checked === false) {
-            formAddError(input);
-            error++;
-        } 
+        // else if(input.getAttribute("type") === "checkbox" && input.checked === false) {
+        //     formAddError(input);
+        //     error++;
+        // } 
         else {
             if (input.value === '') {
                 formAddError(input);
@@ -78,7 +76,13 @@ function formRermoveError(input) {
 //test e-mail
 function validateEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return !re.test(input.value);
+    if(input.value.length == 0) {
+        return false;
+    }        
+    else {
+        return !re.test(input.value);
+    }
+        
 }
 //test Phone
 function validatePhone(input) {

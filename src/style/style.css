@@ -581,7 +581,7 @@ h2 {
 
 .form {
     margin: 0 auto;
-    max-width: 456px;
+    min-width: 456px;
     vertical-align: middle;
     display: inline-block;
     vertical-align: middle;
@@ -723,6 +723,7 @@ h2 {
     width: 32px;
     height: 32px;
     opacity: 0.3;
+    z-index: 5;
 }
 
 .close:hover {
