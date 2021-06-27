@@ -10,18 +10,21 @@ async function formSend(e) {
 
     if (error === 0) {
         form.classList.add('_sending');
-        // let response = await fetch( 'sendmail.php', {
-        //     method: 'POST',
-        //     body: formData
-        // })
-        // if(response.ok){
-        //     let result = await response.json();
-        //     alert(result.message);
-        //     form.reset();
-        // }else {
-
-        // }
-        //closePopUp();
+        let response = await fetch('sendmail.php', {
+            method: 'POST',
+            body: formData
+        })
+        console.log("bla");
+        if(response.ok){
+            let result = await response.json();
+            alert(result.message);
+            form.reset();
+            form.classList.remove('_sending')
+        }else {
+            alert("Что-то пошло не так");
+            form.classList.remove('_sending');
+        }
+        closePopUp();
     } else {
         alert('Корректно заполните обязательные поля');
     }
