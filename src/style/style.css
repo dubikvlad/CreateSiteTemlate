@@ -581,7 +581,7 @@ h2 {
 
 .form {
     margin: 0 auto;
-    min-width: 456px;
+    width: 456px;
     vertical-align: middle;
     display: inline-block;
     vertical-align: middle;
