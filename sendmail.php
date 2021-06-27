@@ -43,10 +43,10 @@
     $mail->Body = $body;
 
     //отправка
-    if(!$mail->send()) {
-        $message = "Что-то почло не так";
-    } else {
+    if($mail->send()) {
         $message = "Данные отправлены!";
+    } else {
+        $message = "Что-то почло не так!";
     }
 
     $response = ['message' => $message];
