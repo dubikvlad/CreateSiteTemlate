@@ -9,6 +9,7 @@ async function formSend(e) {
     let formData = new FormData(form);
 
     if (error === 0) {
+        console.log('lkjsjflgnlj');
         form.classList.add('_sending');
         let response = await fetch('sendmail.php', {
             method: 'POST',
