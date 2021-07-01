@@ -23,10 +23,11 @@
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to / этот порт может отличаться у других провайдеров    
     //От кого письмо
-    $mail->setFrom('web-meert1@mail.ru');
+    $mail->setFrom('web-meert1@mail.ru' , 'WEB-партнер');
     //Кому
-    $mail->addAddress('dubikvlad@mail.ru');
+    $mail->addAddress('koreaminsk@mail.ru'); 
     //Тема
+    $mail->Subject = 'Новая заявка на сайте';
 
 
     //Тело письма
@@ -43,7 +44,8 @@
     //     $body ='<p><strong>Телефон: </strong> ' .$phone '.</p>';
     // }
 
-    $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+    $mail->Body = 'Пользователь <strong>' .$name . '</strong> оставил заявку, его телефон: <br> <a  href="tel:' .$phone. '">' .$phone. '</a> 
+                  <br><br><strong>Почта этого пользователя: </strong>' .$email;
 
     //отправка
     if($mail->send()) {
