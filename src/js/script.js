@@ -83,6 +83,8 @@ for (let anchor of anchors) {
   })
 }
 
+const currentUrl = window.location.href;
+
 // bxslider
 $(document).ready(function(){
     $('.bxslider').bxSlider();
